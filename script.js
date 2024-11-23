@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Seleciona os elementos do menu e as seções correspondentes
     const menuItems = document.querySelectorAll('.portfolio-cards__item');
     const backButtons = document.querySelectorAll('.portfolio-icon__arrow-left');
+    const textYears = document.getElementById('years');
+    textYears.innerText = getAge();
 
     // Adiciona um evento de clique para cada item de menu
     menuItems.forEach(item => {
@@ -56,6 +58,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function getAge() {
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    const birthMonth = 6;
+    const birthDay = 19;
+
+    const hasPassedBirthday =
+        currentDate.getMonth() > birthMonth ||
+        (currentDate.getMonth() === birthMonth && currentDate.getDate() >= birthDay);
+    
+    const age = currentYear - 1999;
+
+    return hasPassedBirthday ? age : age - 1;
+}
 
 function removesAllActiveSections() {
     const sections = document.querySelectorAll('.portfolio-context');

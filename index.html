@@ -18,11 +18,13 @@
     <div class="portfolio">
       <div class="portfolio__body">
         <section class="portfolio-me">
-          <img
-            class="portfolio-me__image"
-            src="./assets/profile.jpeg"
-            alt="Imagem de perfil de Débora Taveira. Cóm cabelos curtos até o ombro, usando óculos de grau redondo, com uma blusa branca de mangas e com o fundo na cor roxa."
-          />
+          <div class="portfolio__wrapper-image">
+            <img
+              class="portfolio-me__image"
+              src="./assets/profile.png"
+              alt="Imagem de perfil de Débora Taveira. Cóm cabelos curtos até o ombro, usando óculos de grau redondo, com uma blusa branca de mangas e com o fundo na cor roxa."
+            />
+          </div>
 
           <div class="portfolio-me__hello">
             <h1>Olá, sou</h1>
@@ -52,7 +54,9 @@
         <div class="portfolio-cards">
           <section class="portfolio-cards__item" data-target="about">
             <div class="portfolio-cards__point"></div>
-            Sobre Mim
+            Sobre 
+            <br />
+            Mim
           </section>
 
           <section
@@ -60,7 +64,9 @@
             data-target="personal-projects"
           >
             <div class="portfolio-cards__point"></div>
-            Projetos Pessoais
+            Projetos 
+            <br />
+            Pessoais
           </section>
 
           <section
@@ -68,7 +74,9 @@
             data-target="professional-experience"
           >
             <div class="portfolio-cards__point"></div>
-            Experiência Profissional
+            Experiência 
+            <br />
+            Profissional
           </section>
 
           <section class="portfolio-cards__item" data-target="skills-tools">
@@ -88,12 +96,12 @@
           <h3 class="portfolio-title">Sobre Mim</h3>
 
           <p class="portfolio-about__description">
-            Olá, me chamo Débora Taveira, tenho 25 anos e atualmente moro em Porto Velho, Rondônia.
+            Olá, me chamo Débora Taveira, tenho <span id="years">25</span> anos e atualmente moro em Porto Velho, Rondônia.
 
             <br />
             <br />
             
-            Formada em Análise e Desenvolvimento de Sistemas pelo IFRO, atuo como desenvolvedora web desde 2021. Nesse período, contribuí para diversos projetos em uma EdTech, onde participei do desenvolvimento de novas funcionalidades, correção de bugs e melhorias contínuas na plataforma de ensino, garantindo uma experiência única para os alunos. Também atuei em sistemas administrativos internos, projetos B2B, e-commerce e otimização de SEO.
+            Formada em Análise e Desenvolvimento de Sistemas pelo IFRO, atuo como desenvolvedora web desde 2021. Nesse período, contribuí para diversos projetos em uma EdTech, onde participei do desenvolvimento de novas funcionalidades, correção de bugs e melhorias contínuas na plataforma de ensino, garantindo uma experiência única para os alunos. Também atuei em sistemas administrativos internos, projetos B2B, e-commerce e otimização do SEO.
             
             <br />
             <br />
@@ -139,7 +147,7 @@
                   Criado para auxiliar as pessoas que estão ingressando na
                   programação, com roteiros de estudos para FrontEnd, BackEnd e
                   Mobile. <br />Foi desenvolvido para o Trabalho de Conclusão de
-                  Curso e estando disponível atualmente na web.
+                  Curso.
                 </p>
 
                 <a
@@ -163,10 +171,7 @@
                 <h4>Formulário de endereço</h4>
 
                 <p>
-                  Este formulário é focado na etapa de inserção do endereço de
-                  entrega. O usuário deve preencher o campo de CEP e, ao clicar
-                  em "Pesquisar", uma requisição será enviada à API do ViaCEP,
-                  retornando as informações de rua, bairro, cidade e estado.
+                  Este formulário é focado na etapa de endereço do usuário. Havendo integração com a API ViaCEP para preenchimento automático dos campos.
                 </p>
 
                 <a
@@ -191,8 +196,7 @@
 
                 <p>
                   Projeto feito para deixar o link da biografia do Instagram
-                  mais atraente e redirecionando para os meus principais
-                  contatos.
+                  mais atraente e com redirecionamento para os principais links de contato.
                 </p>
 
                 <a
@@ -262,7 +266,7 @@
               <div class="portfolio-projects__text">
                 <h4>Recruta Tech</h4>
 
-                <p>Projeto de um formulário de recrutamento por etapas.</p>
+                <p>Formulário de recrutamento divido em etapas.</p>
 
                 <a
                   href="https://deborataveiraa.github.io/VueJs30dias4Projetos/04-Formulario/"
@@ -285,8 +289,7 @@
                 <h4>Adivinhe a Palavra</h4>
 
                 <p>
-                  Projeto de um joguinho de adivinhar a palavra através de
-                  dicas.
+                  Jogo de adivinhar a palavra através de dicas.
                 </p>
 
                 <a
@@ -317,7 +320,7 @@
 
                 <p>
                   Colaborei no desenvolvimento do White Label de projetos
-                  possibilitando terceirizá-los para outras empresas.
+                  possibilitando sua personalização e terceirização para empresas parceiras.
                 </p>
               </div>
             </div>
@@ -327,7 +330,7 @@
                 <h4>Dark mode</h4>
 
                 <p>
-                  Contribuí no desenvolvimento da adaptação de uma plataforma para o tema dark, garantindo uma experiência de usuário coerente e visualmente agradável em mais de um modo de exibição.
+                  Contribuí no desenvolvimento de adaptação da plataforma para o tema dark, garantindo uma experiência de usuário coerente e visualmente agradável em mais de um modo de exibição.
                 </p>
               </div>
             </div>
@@ -337,7 +340,7 @@
                 <h4>SEO</h4>
 
                 <p>
-                  Atuei no desenvolvimento de estratégias de SEO, o que resultou em um aumento significativo na visibilidade da plataforma nas buscas do Google.
+                  Atuei no desenvolvimento de estratégias de SEO utilizando o framework Nuxt.js, resultando em um aumento significativo na visibilidade da plataforma nas ferramentas de buscas
                 </p>
               </div>
             </div>
@@ -347,7 +350,7 @@
                 <h4>FronEnd</h4>
 
                 <p>
-                  Desenvolvi telas responsivas com Vue.js, aplicando boas práticas de programação e mantendo um código limpo. Tendo experiência que vai desde manutenções, refatoração de código e correções de bugs até a construção de novas funcionalidades em sistemas de ensino, administrativos, e-commerce e SEO.
+                  Desenvolvi telas responsivas com Vue.js 2 e 3, aplicando boas práticas de programação e mantendo um código limpo. Tendo experiência desde manutenções, refatoração de código e correções de bugs até a construção de novas funcionalidades em sistemas de ensino, administrativos, e-commerce e SEO.
                 </p>
               </div>
             </div>
@@ -357,7 +360,7 @@
                 <h4>BackEnd</h4>
 
                 <p>
-                  Desenvolvi endpoints de CRUD e scripts com Node.js, realizando consultas e manipulações em bancos de dados MySQL e MongoDB. Auxiliei na construção e documentação de APIs RESTful, além de implementar caches nos endpoints utilizando Redis e gerenciar filas, otimizando a performance e a eficiência do sistema.
+                  Desenvolvi endpoints no backend seguindo os princípios RESTFul utilizando Node.js, criando suas documentações com Postman e Swagger.
                 </p>
               </div>
             </div>
@@ -367,7 +370,7 @@
                 <h4>Metodologias</h4>
 
                 <p>
-                  Trabalhei com metodologias Scrum e Kanban para otimizar o fluxo de trabalho e aprimorar a eficiência nas entregas das tarefas.
+                  Trabalhei com metodologias ágeis como Scrum e Kanban para otimizar o fluxo de trabalho e aprimorar a eficiência nas entregas das tarefas.
                 </p>
               </div>
             </div>
@@ -377,11 +380,7 @@
                 <h4>Design</h4>
 
                 <p>
-                  Contribuí com a melhoria de layouts existentes e criei designs
-                  do zero para novas funcionalidades utilizando o Figma, como a
-                  gamificação para engajamento de alunos e a criação e o
-                  gerenciamento de exercícios na plataforma administrativa,
-                  voltada para professores.
+                  Criei designs no Figma para novas funcionalidades, como gamificação para engajamento de usuários e gerenciamento de exercícios para professores.
                 </p>
               </div>
             </div>
@@ -423,7 +422,7 @@
                 <p>Typescript</p>
               </li>
               <li>
-                <p>Vue.js</p>
+                <p>Vue.js 2 e 3</p>
               </li>
               <li>
                 <p>Nuxt.js</p>
@@ -439,6 +438,15 @@
               </li>
               <li>
                 <p>Design Responsivo</p>
+              </li>
+              <li>
+                <p>Componentes</p>
+              </li>
+              <li>
+                <p>Inglês Intermediário</p>
+              </li>
+              <li>
+                <p>Comunicação e trabalho em equipe</p>
               </li>
               <li>
                 <p>Clean Code</p>
