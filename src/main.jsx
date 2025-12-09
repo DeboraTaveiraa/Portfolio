@@ -12,7 +12,7 @@ import Skills from './pages/Skills'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Portfolio">
     <Routes>
       <Route path="/" element={<App />} >
         <Route path="/" element={<Home />} />
