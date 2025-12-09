@@ -1,0 +1,35 @@
+.skills {
+  /* display: none; */
+  width: 55%;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: #fafafa;
+
+  @media (max-width: 1500px) {
+    width: 100%;
+  }
+}
+
+.skills__title {
+  margin-bottom: 1rem;
+  font-size: 20px;
+  color: #212121;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-height: calc(100vh - 290px);
+  padding-right: 10px;
+  overflow-y: auto;
+}
+
+.skills__list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.skills__list::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #d3d2d2; 
+}

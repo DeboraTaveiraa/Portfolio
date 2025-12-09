@@ -1,0 +1,24 @@
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid #d3d2d2;
+  background-color: #f5f5f5;
+  width: 180px;
+  text-align: center;
+}
+
+.skill__icon svg {
+  width: 25px;
+  height: 25px;
+  color: #CCAFA5;
+}
+
+.skill__title {
+  margin-top: 0.5rem;
+  font-size: 18px;
+  color: #212121;
+}

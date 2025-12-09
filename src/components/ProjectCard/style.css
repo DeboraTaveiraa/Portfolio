@@ -1,0 +1,41 @@
+.project-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid #d3d2d2;
+
+  @media (max-width: 1500px) {
+    flex-direction: column;
+  }
+}
+
+.project__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: #212121;
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    line-height: 140%;
+  }
+}
+
+.project__link {
+  color: #B99892;
+  font-weight: 500;
+  text-decoration: none;
+}

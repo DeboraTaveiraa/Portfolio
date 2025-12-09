@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 100vh;
+  padding: 2rem 3rem;
+  background-color: #EDE7DC;
+
+  @media (max-width: 568px) {
+    padding: 1.5rem;
+  }
+}
+
+.app__container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  @media (max-width: 1500px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
